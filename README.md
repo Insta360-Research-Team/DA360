@@ -32,7 +32,7 @@ pip install -r requirements.txt
 bash scripts/download_models.sh
 ```
 
-The pretrained models are available on [Google Drive](https://drive.google.com/drive/folders/1FMLWZfJ_IPKOa_cEbVqrq8_BRkl3oB_2?usp=drive_link) and can be downloaded mamanually. 
+The pretrained models are available on [Google Drive](https://drive.google.com/drive/folders/1FMLWZfJ_IPKOa_cEbVqrq8_BRkl3oB_2?usp=drive_link) and can be downloaded manually. 
 
 
 ### Test On Panoramic Images  
