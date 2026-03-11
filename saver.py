@@ -57,10 +57,10 @@ class Saver(object):
 
     def save_as_point_cloud(self, depth, rgb, path, mask=None):
         h, w = depth.shape
-        Theta = np.arange(h).reshape(h, 1) * np.pi / h + np.pi / h / 2
+        Theta = np.pi - np.arange(h).reshape(h, 1) * np.pi / h - np.pi / h / 2
         Theta = np.repeat(Theta, w, axis=1)
         Phi = np.arange(w).reshape(1, w) * 2 * np.pi / w + np.pi / w - np.pi
-        Phi = -np.repeat(Phi, h, axis=0)
+        Phi = np.repeat(Phi, h, axis=0)
 
         X = depth * np.sin(Theta) * np.sin(Phi)
         Y = depth * np.cos(Theta)
